@@ -7,7 +7,7 @@ body {
 }
 
 nav {
-	background: rgba(26, 26, 74, 0.85);
+	background: rgba(21,21,52,0.7);
 	height: 80px;
 	width: 100%;
     position: fixed;
@@ -40,7 +40,7 @@ a {
 ul.menu {
     margin: 0 auto;
     text-align: center;
-    line-height: 70px;
+    line-height: 80px;
     vertical-align: middle;
     padding: 0;
     position: absolute;
@@ -63,6 +63,92 @@ ul.menu li {
 
 ul.menu a li {
     color: #fff;
+}
+
+
+.lang {
+    display: inline-block;
+    float: right;
+    line-height:80px;
+    vertical-align: middle;
+    padding: 0 20px;
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+    background: #2e5456;
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+
+.lang .triangle {
+    /* width: 10px; */
+    /* height: 20px; */
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #ffffff transparent;
+    transform: rotate(180deg);
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.lang-dropdown {
+    position: absolute;
+    right: 98px;
+    background: #2e306b;
+    display: none;
+}
+
+.lang-dropdown h4 {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    float: left;
+    text-indent: 0;
+    text-align: center;
+}
+  
+  
+ul.lang-list {
+    list-style: none;
+    text-indent: 20px;
+}
+
+ul.lang-list li {
+    background:#2e306b;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+    transition: all 0.5s ease-in-out;
+ }
+
+ul.lang-list li.active {
+    background: #78d1d6;
+}
+
+ul.lang-list li:hover {
+    background: #78d1d6;
+}
+
+img.login-icon {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.user-info {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    line-height: 80px;
+    color: #2e306b;
+    background: #78d1d6;
+    padding: 0 25px;
+    position: relative;
+    cursor: pointer;
+    z-index: 15;
+    color: #2e5456;
+    text-transform: uppercase;
+    font-size: 0.875rem
 }
 
 .logo-txt {
@@ -119,12 +205,13 @@ ul.menu a li {
 }
 
 .hp-bighero h4 {
-    font-size: 13px;
+    font-size: 0.875rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 2px solid;
+    background: #fff;
+    color: #2e2e6d;
+    border: 1px solid #fff;
     border-radius: 50px;
-    padding: 10px 30px;
+    padding: 15px 35px;
     display: inline-block;
     margin: 0 auto;
     margin-top: 20px;
@@ -132,6 +219,12 @@ ul.menu a li {
     right: 0;
     cursor: pointer;
     transition: all 0.6s ease-in-out;
+}
+
+.hp-bighero h4:hover {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;    
 }
 
 .left-col, .right-col {
@@ -226,6 +319,10 @@ ul.menu a li {
 .fd-container h1 {
 	font-size: 3rem;
 	color: #2e2e6d;
+}
+
+.fd-text {
+    margin-bottom: 40px;
 }
 
 p {
@@ -511,9 +608,61 @@ footer p {
    left: -5px;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width: 730px;
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 840px) {
+    .container {
+        width: 800px;
+        padding: 0 30px;
+    }
+}
 
 @media (min-width: 1024px) {
-	.container {
-	    width: 1300px;
-	}
+    .container {
+        width: 1000px;
+    }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1350px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .product-category-tile {
+        background-size: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    ul.footer-nav li {
+        display: block;
+    }
+
+    section.services p {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.about {
+        background-size: cover;
+    }
+
+    .newsletter-input input {
+        width: calc(100% - 160px);
+    }
+}
+

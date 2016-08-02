@@ -27,7 +27,9 @@
 
 <body>
     <nav>
-        <div class="logo-txt"><a href="index.html"><img src="images/logo.png"></a></div>
+        <div class="logo-txt">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
         <ul class="menu">
             <a href="products-v2.html" class="navlink">
                 <li>Products</li>
@@ -51,6 +53,34 @@
                 <li>Corporate</li>
             </a>
         </ul>
+        <div class="user-info"><a href="my-account.html"><img src="images/login.svg" class="login-icon"> Log In</a></div>
+        <div class="lang" id="langPicker">EN (UK)
+            <div class="triangle"></div>
+        </div>
+        <div class="lang-dropdown">
+            <div class="lang-col">
+                <ul class="lang-list">
+                    <h4>United States</h4>
+                    <li>English</li>
+                    <li>Français</li>
+                    <li>español</li>
+                </ul>
+                <ul class="lang-list margin-top">
+                    <h4>United Kingdom</h4>
+                    <li>English</li>
+                    <li>Français</li>
+                    <li>español</li>
+                </ul>
+            </div>
+            <div class="lang-col">
+                <ul class="lang-list">
+                    <h4>Canada</h4>
+                    <li>English</li>
+                    <li>Français</li>
+                    <li>español</li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <div class="hp-bighero">
         <div class="container">
@@ -64,12 +94,10 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
             <div class="left-col golden-client">
                 <div class="left-col-bg golden-client">
-                    
                     <div class="heading-container">
                         <h1 class="heading-intro">New Collection</h1>
                         <h3 class="subtitle">Check Out Our New Models</h3>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -105,19 +133,19 @@
         <div class="container">
             <div class="row">
                 <h2>Our Services</h2>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="services-tile left">
                     </div>
                     <h3>We Design Shapes With Tradition</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quam purus, ornare sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="services-tile middle">
                     </div>
                     <h3>We Work With Crossdisciplinary Teams</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quam purus, ornare sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="services-tile right">
                     </div>
                     <h3>We Deliver Products Within Two Days</h3>
@@ -159,12 +187,12 @@
         <h2>About us</h2>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <p>A shape is the form of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material composition.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                 </div>
             </div>
         </div>
@@ -191,30 +219,31 @@
     </div>
     <footer>
         <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-            <ul class="footer-nav">
-                <li>Feedback</li>
-                <li>Sitemap</li>
-                <li>Privacy Policy</li>
-                <li>Terms and Conditions</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">    
-            <div class="newsletter-input newsletter">
-              <input type="text" class="newsletter-in" placeholder="Sign Up For The Newsletter">
-              <button class="" type="button">Submit</button>
-           </div>
-        </div>   
-        </div>
-        <div class="social-media">
-                <img src="images/facebook-icon.svg" class="social-media-icon"/>
-                <img src="images/twitter-icon.svg" class="social-media-icon"/>
-                <img src="images/linkedin-icon.svg" class="social-media-icon"/>
-        </div>
-            <p>2016 WE.B2B All Rights Reserved. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Etiam quam purus, ornare sit amet.</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+                    <ul class="footer-nav">
+                        <li>Feedback</li>
+                        <li>Sitemap</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditions</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="newsletter-input newsletter">
+                        <input type="text" class="newsletter-in" placeholder="Sign Up For The Newsletter">
+                        <button class="" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media">
+                <img src="images/facebook-icon.svg" class="social-media-icon" />
+                <img src="images/twitter-icon.svg" class="social-media-icon" />
+                <img src="images/linkedin-icon.svg" class="social-media-icon" />
+            </div>
+            <p>2016 WE.B2B All Rights Reserved. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br>Etiam quam purus, ornare sit amet.</p>
         </div>
     </footer>
 </body>
