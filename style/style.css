@@ -144,6 +144,36 @@ ul.menu a li {
 	background-image: url('../images/hp-banner-left.jpg');
 }
 
+.heading-container {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    margin-top: -50px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+.heading-intro {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 0.875rem;
+}
+
 .no-padding {
 	padding: 0;
 }
@@ -243,10 +273,19 @@ p {
 	font-size: 0.875rem;
 	text-transform: uppercase;
 	background: transparent;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
 }
 
 input.input-submit {
 	background: #fff;
+}
+
+.button:hover, 
+input.input-submit:hover {
+    background: #4c4db5;
+    border: 1px solid #4c4db5;
+    color: #fff;
 }
 
 section.services {
@@ -384,19 +423,26 @@ ul.footer-nav li {
     padding: 0 20px;
     text-transform: uppercase;
     font-size: 0.8rem;
+    margin: 10px 0;
 }
 
 .social-media {
     display: block;
     margin: 0 auto;
     text-align: center;
-    margin-top: 65px;
+    margin-top: 70px;
 }
 
 img.social-media-icon {
     height: 40px;
     margin: 0 10px;
     opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+img.social-media-icon:hover {
+    transform: scale(1.2);
 }
 
 footer p {
@@ -405,6 +451,67 @@ footer p {
 	margin-top:20px;
 	text-align: center;
 }
+
+.newsletter-input {
+   text-align: center;
+   margin-top: 10px;
+}
+
+.newsletter-input input {
+   width: calc(100% - 120px);
+   height: 40px;
+   padding: 14px 20px;
+   background-color: #6c6d99;
+   border-radius: 40px 0 0 40px;
+   font-family: 'proxima-nova', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   color: #fff;
+   border:none;
+}
+
+.newsletter-in::-webkit-input-placeholder
+{
+  color: #FFF;
+}
+
+.newsletter-in:-moz-placeholder
+{
+  color: #FFF;
+}
+
+.newsletter-in::-moz-placeholder
+{
+  color: #FFF;
+}
+
+.newsletter-in:-ms-input-placeholder
+{
+  color: #FFF;
+}
+
+.newsletter-input input:focus {
+   outline: none;
+}
+
+.newsletter-input button {
+   width: 115px;
+   height: 40px;
+   padding: 10px;
+   background-color: #fff;
+   border-radius: 0 40px 40px 0;
+   font-family: 'proxima-nova', sans-serif;
+   font-size: 14px;
+   font-weight: 300;
+   text-transform: uppercase;
+   color: #2e2e6c;
+   border: none;   
+   cursor: pointer;
+   position: relative;
+   left: -5px;
+}
+
+
 @media (min-width: 1024px) {
 	.container {
 	    width: 1300px;
